@@ -1,7 +1,7 @@
 //mudança para testar
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(x,y) {
+  return x && y;
 }
 
 // Desafio 2
