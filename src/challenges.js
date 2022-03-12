@@ -78,17 +78,69 @@ function fizzBuzz(x) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(z) {
+  let x = z.split('');
+  for (y in x) {
+    switch (x[y]) {
+      case 'a':
+        x[y] = 1
+        break;
+      case 'e':
+        x[y] = 2
+        break;
+      case 'i':
+        x[y] = 3
+        break;
+      case 'o':
+        x[y] = 4
+        break;
+      case 'u':
+        x[y] = 5
+        break;
+    }
+  }
+  let resultado = '';
+  for (y in x) {
+    resultado = resultado + x[y]
+  }
+  return resultado;
 }
-function decode() {
-  // seu código aqui
+
+
+function decode(z) {
+  let x = z.split('');
+  for (y in x) {
+    switch (x[y]) {
+      case '1':
+        x[y] = 'a'
+        break;
+      case '2':
+        x[y] = 'e'
+        break;
+      case '3':
+        x[y] = 'i'
+        break;
+      case '4':
+        x[y] = 'o'
+        break;
+      case '5':
+        x[y] = 'u'
+        break;
+    }
+  }
+  let resultado2 = '';
+  for (y in x) {
+    resultado2 = resultado2 + x[y]
+  }
+  return resultado2;
 }
 
 // Desafio 10
 function techList() {
   // seu código aqui
 }
+
+
 
 module.exports = {
   calcArea,
