@@ -16,17 +16,29 @@ function splitSentence(x) {
 
 // Desafio 4
 function concatName(x) {
-  return x[x.length-1]+', '+x[0];
+  return x[x.length - 1] + ', ' + x[0];
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
-    return wins*3+ties;
+  return wins * 3 + ties;
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(x) {
+  let maior = x[0];
+  for (y of x) {
+    if (maior < y) {
+      maior = y
+    }
+  }
+  let contador = 0;
+  for (y of x) {
+    if (y === maior) {
+      contador = contador+1
+    }
+  }
+return contador;
 }
 
 // Desafio 7
