@@ -35,15 +35,29 @@ function highestCount(x) {
   let contador = 0;
   for (y of x) {
     if (y === maior) {
-      contador = contador+1
+      contador = contador + 1
     }
   }
-return contador;
+  return contador;
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(x, y, z) {
+  let caty = y - x;
+  let catz = z - x;
+  if (caty < 0) {
+    caty = caty * -1;
+  }
+  if (catz < 0) {
+    catz = catz * -1;
+  }
+  if (caty < catz) {
+    return 'cat1';
+  } else if (catz < caty) {
+    return 'cat2';
+  } else {
+    return 'os gatos trombam e o rato foge';
+  }
 }
 
 // Desafio 8
