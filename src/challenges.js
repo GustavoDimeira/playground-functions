@@ -1,17 +1,17 @@
 //mudança para testar
 // Desafio 1
-function compareTrue(x,y) {
+function compareTrue(x, y) {
   return x && y;
 }
 
 // Desafio 2
-function calcArea(b,h) {
-  return b*h/2;
+function calcArea(b, h) {
+  return b * h / 2;
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(x) {
+  return x.split(' ');
 }
 
 // Desafio 4
