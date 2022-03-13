@@ -138,9 +138,9 @@ function decode(z) {
 function techList(tech, name) {
   let retornar = [];
   tech = tech.sort();
- if (tech.length === 0) {
-   return 'Vazio!';
- }
+  if (tech.length === 0) {
+    return 'Vazio!';
+  }
   for (let x = 0; x < tech.length; x += 1) {
     retornar.push({
       tech: tech[x],
@@ -149,8 +149,6 @@ function techList(tech, name) {
   }
   return retornar;
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],
-"Lucas"));
 
 module.exports = {
   calcArea,
