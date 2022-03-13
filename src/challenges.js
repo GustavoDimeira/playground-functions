@@ -1,4 +1,3 @@
-//mudança para testar
 // Desafio 1
 function compareTrue(x, y) {
   return x && y;
@@ -29,13 +28,13 @@ function highestCount(x) {
   let maior = x[0];
   for (y of x) {
     if (maior < y) {
-      maior = y
+      maior = y;
     }
   }
   let contador = 0;
   for (y of x) {
     if (y === maior) {
-      contador = contador + 1
+      contador = contador + 1;
     }
   }
   return contador;
@@ -83,19 +82,19 @@ function encode(z) {
   for (y in x) {
     switch (x[y]) {
       case 'a':
-        x[y] = 1
+        x[y] = 1;
         break;
       case 'e':
-        x[y] = 2
+        x[y] = 2;
         break;
       case 'i':
-        x[y] = 3
+        x[y] = 3;
         break;
       case 'o':
-        x[y] = 4
+        x[y] = 4;
         break;
       case 'u':
-        x[y] = 5
+        x[y] = 5;
         break;
     }
   }
@@ -112,35 +111,46 @@ function decode(z) {
   for (y in x) {
     switch (x[y]) {
       case '1':
-        x[y] = 'a'
+        x[y] = 'a';
         break;
       case '2':
-        x[y] = 'e'
+        x[y] = 'e';
         break;
       case '3':
-        x[y] = 'i'
+        x[y] = 'i';
         break;
       case '4':
-        x[y] = 'o'
+        x[y] = 'o';
         break;
       case '5':
-        x[y] = 'u'
+        x[y] = 'u';
         break;
     }
   }
   let resultado2 = '';
   for (y in x) {
-    resultado2 = resultado2 + x[y]
+    resultado2 = resultado2 + x[y];
   }
   return resultado2;
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(tech, name) {
+  let retornar = [];
+  tech = tech.sort();
+ if (tech.length === 0) {
+   return 'Vazio!';
+ }
+  for (let x = 0; x < tech.length; x += 1) {
+    retornar.push({
+      tech: tech[x],
+      name: name,
+    })
+  }
+  return retornar;
 }
-
-
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],
+"Lucas"));
 
 module.exports = {
   calcArea,
